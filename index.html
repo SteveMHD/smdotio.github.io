@@ -14,12 +14,13 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content | truncate: 200 }}
-    {{ post.content | size }}
+    {{ post.content | strip_html | truncate: 200 }}
 
     {% assign charCount = {{ post.content | size }} %}
     {% if charCount > 200 %}
-      <a href="{{ post.url }}">Read More</a>
+      <a href="{{ post.url }}">
+        Read More
+      </a>
     {% endif %}
   </div>
   {% endfor %}
