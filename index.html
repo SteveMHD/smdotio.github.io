@@ -14,7 +14,8 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.content | truncate: 200 }}
+    <a href="{{ post.url }}">Read More</a>
   </div>
   {% endfor %}
 </div>
