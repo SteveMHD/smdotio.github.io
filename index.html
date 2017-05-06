@@ -15,6 +15,7 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content | truncate: 200 }}
+    {{ post.content | size }}
 
     {% assign charCount = {{ post.content | size }} %}
     {% if charCount > 200 %}
