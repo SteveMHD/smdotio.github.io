@@ -11,16 +11,16 @@ title: Home
         {{ post.title }}
       </a>
     </h1>
-
     <span class="post-date">{{ post.date | date_to_string }}</span>
-
     {{ post.content | strip_html | truncate: 200 }}
-
     {% assign charCount = {{ post.content | size }} %}
     {% if charCount > 200 %}
-      <a href="{{ post.url }}">
-        Read More
-      </a>
+    
+      <span class="read-more">
+        <a href="{{ post.url }}">
+          Read More
+        </a>
+      </span>
     {% endif %}
   </div>
   {% endfor %}
