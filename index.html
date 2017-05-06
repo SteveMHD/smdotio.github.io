@@ -15,8 +15,9 @@ title: Home
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
     {{ post.content | truncate: 200 }}
-    {% if post.content | size > 200 %}
-      <br>
+
+    {% assign charCount = {{ post.content | size }} %}
+    {% if charCount > 200 %}
       <a href="{{ post.url }}">Read More</a>
     {% endif %}
   </div>
