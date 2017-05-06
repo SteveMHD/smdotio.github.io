@@ -6,10 +6,10 @@ highlighter:      rouge
 permalink:        pretty
 
 # Setup
-title:            SMdotIO
+title:            Steve
 tagline:          'Steve Marshall'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+description:      'The adventures of a fantastically inept programmer called Steve'
+url:              http://stevemarshall.io
 baseurl:          /
 
 author:
